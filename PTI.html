@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Psicólogo Local</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto; 
+      text-align: center; 
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: left; 
+    }
+    ul li::before {
+      content: "\2022"; 
+      color: #ecda38; 
+      font-size: 1.2em; 
+      display: inline-block;
+      width: 1em; 
+      margin-left: -1em; 
+    }
+    section {
+      padding-top: 0; 
+      padding-bottom: 0; 
+    }
+    header {
+      margin-bottom: 20px; 
+    }
+    .underline {
+      text-decoration: underline; 
+    }
+    #contact form {
+      display: flex;
+      flex-direction: column; 
+      align-items: center; 
+    }
+    #contact form input,
+    #contact form textarea,
+    #contact form button {
+      width: 100%; 
+    }
+    #contact form * {
+      margin-bottom: 10px; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Psicólogo Local</h1>
+      <p class="underline">O melhor atendimento da região!</p>
+    </header>
+    <section id="about">
+      <h2>Sobre Nós</h2>
+      <p>Possuímos muitos profissionais especializados para cada caso que o cliente precisar.</p>
+      <p>Ajudamos em quaisquer tipos de problemas: traumas, barreiras mentais, problemas no casamento.</p>
+      <p>Entre muitos outros, qualquer dificuldade conseguimos resolver!</p>
+    </section>
+    <section id="services">
+      <h2>Nossos Serviços</h2>
+      <ul>
+        <li>Avaliação Psicológica</li>
+        <li>Terapia de Casal e Familiar</li>
+        <li>Aconselhamento</li>
+        <li>Treinamento em Habilidades Sociais</li>
+      </ul>
+    </section>
+    <section id="benefits">
+      <h2>Vantagens e Benefícios</h2>
+      <ul>
+        <li>Resultados para toda a vida</li>
+        <li>Atendimento personalizado e focado em suas necessidades</li>
+        <li>Qualidade impecável nas sessões</li>
+        <li>Apoio constante e motivação para continuar</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Entre em Contato</h2>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Nome" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <footer>
+      <p>&copy; 2024 Psicólogo Local. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+</body>
+</html>
